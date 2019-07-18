@@ -1,0 +1,174 @@
+.App {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+html,
+body {
+  background-color: green;
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"] {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: default;
+}
+
+.activity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main {
+  display: grid;
+  grid-gap: 5%;
+  grid-template-columns: 62.5% 32.5%;
+  height: 100%;
+}
+
+.left-panel {
+  display: grid;
+  grid-column: 1;
+  /* grid-gap: 5px; */
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.points-window {
+  grid-row: 1;
+}
+
+.board-window {
+  display: grid;
+  grid-gap: 5px;
+  grid-row: 2/6;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.place-bets-window {
+  display: grid;
+  grid-gap: 2px;
+  grid-row: 1;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.place-button {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  font-family: "Libre Baskerville", serif;
+  height: 100%;
+  justify-content: space-around;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.place-input {
+  background-color: white;
+  border: none;
+  width: 1rem;
+}
+
+.come-bet-window {
+  grid-row: 2;
+}
+
+.field-bet-window {
+  grid-row: 3;
+}
+
+.pass-bet-window {
+  grid-row: 4;
+}
+
+.bet-button {
+  font-family: "Libre Baskerville", serif;
+  height: 100%;
+  width: 90%;
+}
+
+.bet-input {
+  background-color: white;
+  border: none;
+  font-family: "Libre Baskerville", serif;
+  width: 20px;
+}
+
+.accept-bets-window {
+  grid-row: 6;
+  margin-top: 5px;
+}
+
+.player-funds-window {
+  grid-row: 7;
+}
+
+.right-panel {
+  display: grid;
+  grid-column: 2;
+  grid-template-rows: 3fr 3fr 1fr 1fr;
+}
+
+.results-window {
+  grid-row: 1;
+  height: 100%;
+}
+
+.activity-list {
+  list-style: circle;
+  text-align: left;
+}
+
+.activity-item {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.previous-rolls-window {
+  grid-row: 2;
+  height: 100%;
+  max-height: 100%;
+}
+
+.overflow-list {
+  height: 80%;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.dice-list {
+  color: darkred;
+  font-size: 1.5rem;
+}
+
+.dice-results-window {
+  color: darkred;
+  grid-row: 3;
+}
+
+.die-roll-window {
+  grid-row: 4;
+  margin: 5px;
+}
+
+.roll-button {
+  color: darkred;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.fa-dice {
+  font-size: 50px;
+}
